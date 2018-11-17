@@ -1,0 +1,9 @@
+cd d: 打开D盘
+
+cd www 打开www文件夹
+
+mkdir testgit 建立新的文件夹testgit
+
+git status查看状态
+
+pwd查看当前所在的目录
