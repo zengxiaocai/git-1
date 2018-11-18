@@ -6,4 +6,43 @@ mkdir testgit 建立新的文件夹testgit
 
 git status查看状态
 
+ls 产看当前文件
+
 pwd查看当前所在的目录
+
+
+1.创建代码仓库（Repository）
+git config --global user.name "zengxiaocai"
+git config --global user.email "1724109631@qq.com"
+配置完成后还可以查询状态是否配置成功，只需要把 后面的姓名和邮箱去掉即可
+(仓库是用于存放项目代码的地方，想在git上开源一个项目，，必须新建一个仓库)
+所有本地提交的代码都会存放在仓库中，如果有需要还可以推送到远程仓库中去
+
+2.仓库初始化
+git init
+完整操作如下：
+cd test--打开test文件夹
+pwd--查看当前目录
+git init--初始化，此时会生成一个隐藏文件
+
+3.关于代码提交也是比较简单的
+（只需要使用add和commit即可）
+add:是把想要提交的代码先添加进来
+commit:是真正的提交
+
+git add 完整文件名   --提交单个文件
+git add .  --提交当前目录的所有文件
+
+git commit -m "这是对本次提交的描述信息"
+--这是在本地执行提交操作
+完整才做如下：
+git status --查询当前状态
+touch a.php --创建a.php文件
+git status  --查询是否创建成功
+git add a.php --由工作区存放到暂存区
+git status -- 查询是否存放成功--会出现new file:a.php
+git commit -m "本次提交的描述信息" --真正提交到仓库中区
+
+git push origin master 
+--这是将提交的代码同步到远程版本库中去
+
