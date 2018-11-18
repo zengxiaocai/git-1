@@ -10,6 +10,15 @@ ls 产看当前文件
 
 pwd查看当前所在的目录
 
+touch 文件名 --这是创建一个具体的文件
+退出vi编写模式--按住esc ，再连续按大写的z两次就退出来了
+
+rm -rf 文件名  --删除文件
+git rm 文件名  --  从仓库中删除文件
+
+git log --可以查看提交历史，以便于确定要回退到哪一个版本
+git reflog --查看命令历史，以便于回到未来哪一个版本
+
 
 1.创建代码仓库（Repository）
 git config --global user.name "zengxiaocai"
@@ -43,6 +52,9 @@ git add a.php --由工作区存放到暂存区
 git status -- 查询是否存放成功--会出现new file:a.php
 git commit -m "本次提交的描述信息" --真正提交到仓库中区
 
+
 git push origin master 
 --这是将提交的代码同步到远程版本库中去
+
+
 
